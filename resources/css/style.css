@@ -1,17 +1,29 @@
+/*Adding some syles for all elements*/
 * {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-family: Verdana;
-    display: block;
-    margin: 20px auto;
+    padding: 0; /*Resetting default padding to 0 just in case*/
+    margin: 0 auto; /*Centering everything horizontally with some space above and below*/
+    text-align: center; /*Aligning all text center, as most of it is*/
+    font-family: Verdana; /*All fonts are verdana*/
+    display: block; /*All elements are block-type*/
 }
 
 body {
-    background-color: black;
+    background-color: black; /*The entire page has a black background*/
+    margin: 0;
 }
 
+header a {
+    margin: 20px auto;
+}
+
+main, main * {
+    margin: 30px auto;
+}
+
+
+/*The next few are self-explanatory*/
 h1 {
+    margin-top: 0;
     font-weight: normal;
     font-size: 50px;
     color: white;
@@ -22,6 +34,13 @@ a {
     font-size: 16px;
 }
 
+img {
+    margin-top: 40px;
+}
+
+
+/*It would have been easier to make the "coming soon..." text an h2
+element, but that seemed wrong semantically*/
 h2, .coming-soon {
     font-weight: 300;
     font-size: 42px;
@@ -35,4 +54,5 @@ p {
 
 footer p {
     text-align: right;
+    margin: 0 20px 20px 0;
 }
